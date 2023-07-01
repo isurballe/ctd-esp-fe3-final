@@ -12,7 +12,6 @@ export const dentistsInitialState = {
 }
 
 
-
 export const ContextGlobal = createContext();
 
 const apiUrl = 'https://jsonplaceholder.typicode.com/users';

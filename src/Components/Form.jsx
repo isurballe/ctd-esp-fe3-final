@@ -1,9 +1,6 @@
 import React from "react";
-
-
 const Form = ({handleSubmit, setRequest}) => {
   
-  //Aqui deberan implementar el form completo con sus validacione
   return (
     <div>
       <form onSubmit={handleSubmit}>

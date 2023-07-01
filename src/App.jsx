@@ -9,9 +9,6 @@ import { routes } from "./Routes/utils/routes";
 import { useGlobalContext } from "./Components/utils/global.context";
 import './index.css'
 
-
-
-
 function App() {
   
   const {dentistsStates} = useGlobalContext();

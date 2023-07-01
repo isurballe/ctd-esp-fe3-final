@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom'
 import { routes } from '../Routes/utils/routes'
 import { useGlobalContext } from './utils/global.context'
 
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
-
-
 
 const Navbar = () => {
 

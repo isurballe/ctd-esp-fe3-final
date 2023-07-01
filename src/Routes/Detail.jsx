@@ -3,20 +3,13 @@ import React, { useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import { useGlobalContext } from '../Components/utils/global.context';
 
-
-//Este componente debera ser estilado como "dark" o "pght" dependiendo del theme del Context
-
 const Detail = () => {
   const {dentistsStates, dentistsDispatch} = useGlobalContext()
-
   const params = useParams();
-
   const urlDetail = `https://jsonplaceholder.typicode.com/users/${params.id}`;
-
   useEffect(() => {
     axios(urlDetail).then((res) => dentistsDispatch({type:'GET_DENTIST', payload: res.data}));
   }, []);
-
   return (
     <>
       <h1>Detail Dentist id </h1>
